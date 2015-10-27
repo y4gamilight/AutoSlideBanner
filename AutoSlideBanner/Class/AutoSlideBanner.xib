@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AutoSlideBanner">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="spJ-G1-ppR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i9h-Ld-MSK">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="spJ-G1-ppR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AWH-hH-Tpd"/>
+                <constraint firstAttribute="bottom" secondItem="spJ-G1-ppR" secondAttribute="bottom" id="L7p-Nk-oic"/>
+                <constraint firstAttribute="trailing" secondItem="spJ-G1-ppR" secondAttribute="trailing" id="MBC-EM-z7n"/>
+                <constraint firstItem="spJ-G1-ppR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NkW-oD-Fsw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="spJ-G1-ppR" id="g1Z-em-xI9"/>
+                <outlet property="flowLayout" destination="i9h-Ld-MSK" id="UAC-7r-OcM"/>
+            </connections>
+            <point key="canvasLocation" x="559.5" y="256"/>
+        </view>
+    </objects>
+</document>
